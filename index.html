@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TastyBite Restaurant</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Login Modal -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+      <h2>Login Required</h2>
+  
+      <input type="text" id="username" placeholder="Enter Username">
+      <input type="password" id="password" placeholder="Enter Password">
+  
+      <button id="loginBtn">Login</button>
+      <p id="loginMsg"></p>
+    </div>
+  </div>
+  
+
+<body>
+
+  <!-- Header -->
+  <header>
+
+    <div class="logo">
+      <h1>TastyBite Restaurant</h1>
+    </div>
+  
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#cart">Cart</a>
+      <a href="#contact">Contact</a>
+  
+      <!-- Login Button -->
+      <button id="loginHeaderBtn">Login</button>
+    </nav>
+  
+  </header>
+  
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h1>Delicious Food, Happy Mood 🍽️</h1>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <h2>Our Special Menu</h2>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVt4aAT6t8SWbxuE7YgThGOLOOPImFMqCpYg&s">
+        <h3>Chicken Biryani</h3>
+        <p class="price">₹180</p>
+        <button onclick="addToCart('Chicken Biryani',180)">Add to Cart</button>
+      </div>
+      
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+        <h3>Veg Pizza</h3>
+        <p class="price">₹220</p>
+        <button onclick="addToCart('Veg Pizza',220)">Add to Cart</button>
+      </div>
+      
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+        <h3>Burger Combo</h3>
+        <p class="price">₹150</p>
+        <button onclick="addToCart('Burger Combo',150)">Add to Cart</button>
+      </div>
+      
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307">
+        <h3>Cold Coffee</h3>
+        <p class="price">₹90</p>
+        <button onclick="addToCart('Cold Coffee',90)">Add to Cart</button>
+      </div>
+      
+    
+       
+  </section>
+
+ 
+
+  <!-- Cart Section -->
+<section id="cart">
+    <h2>Your Cart 🛒</h2>
+  
+    <div class="cart-box">
+  
+      <ul id="cartItems"></ul>
+  
+      <h3>Total: ₹<span id="total">0</span></h3>
+  
+      
+      <button id="clearCart">Clear Cart</button>
+      <button id="checkoutBtn">Order Now</button>
+
+  
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <p class="contact-info">
+      📍 Chennai, India <br>
+      📞 +91 9876543210 <br>
+      ✉️ tastybite@gmail.com
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 TastyBite Restaurant | Made by Vinod</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

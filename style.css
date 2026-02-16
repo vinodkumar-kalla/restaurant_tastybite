@@ -1,0 +1,279 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f9f9f9;
+  }
+  
+  /* Header */
+  header {
+    background: #ff6b35;
+    color: white;
+    padding: 20px 40px;
+  
+    display: flex;
+    justify-content: flex-end; /* Move content to right */
+    align-items: center;
+  
+    gap: 40px;
+  }
+  
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover;
+    height: 350px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: white;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 40px;
+  }
+  
+  /* Section */
+  section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Menu */
+  .menu {
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+  }
+  
+  
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  
+    text-align: center;
+  }
+  
+  .card img {
+    width: 400px;       /* smaller width */
+    height: 250px;      /* smaller height */
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+  }
+  
+  
+  .card h3 {
+    margin: 15px 0 5px;
+  }
+  
+  .price {
+    color: #ff6b35;
+    font-weight: bold;
+  }
+  
+  /* Order */
+  .order-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+  
+    max-width: 500px;
+    margin: auto;
+  
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+  
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background: #e65c2d;
+  }
+  
+  #msg {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  /* Contact */
+  .contact-info {
+    text-align: center;
+    line-height: 1.8;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  /* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Modal Box */
+  .modal-content {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    text-align: center;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .modal-content button {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background: #e65c2d;
+  }
+  
+  #loginMsg {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* Cart */
+
+.cart-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+  
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #cartItems {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cartItems li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 8px;
+    background: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  .cart-box button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Header Login Button */
+
+#loginHeaderBtn {
+    background: white;
+    color: #ff6b35;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #loginHeaderBtn:hover {
+    background: #ffe2d6;
+  }
+
+  #checkoutBtn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #checkoutBtn:hover {
+    background: #218838;
+  }
+  
